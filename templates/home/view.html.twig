@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <div class="container p-1">
+        <div class="bg-white shadow-md p-4 my-2">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">{{ destination.name }}</h2>
+        </div>
+        <div class="p-4 my-2 mx-auto bg-white shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                    <img class="h-48 w-full object-cover md:w-48" src="{{ destination.image }}" alt="Destination Image">
+                </div>
+                <div class="p-8">
+                    <h1 class="text-2xl font-bold text-gray-900">{{ destination.name }}</h1>
+                    <p class="mt-2 text-gray-600">{{ destination.description }}</p>
+                    <div class="mt-4">
+                        <span class="text-xl font-semibold text-gray-900">MAD {{ destination.price }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ path('app_home') }}">Retourner à la liste</a>
+    </div>
+{% endblock %}

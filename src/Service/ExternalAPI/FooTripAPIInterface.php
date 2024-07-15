@@ -4,7 +4,7 @@
 namespace App\Service\ExternalAPI;
 
 use App\Exception\FooTrip\InvalidParameterException;
-use App\Exception\MovieDB\FooTripResponseException;
+use App\Exception\FooTrip\FooTripResponseException;
 
 interface FooTripAPIInterface
 {

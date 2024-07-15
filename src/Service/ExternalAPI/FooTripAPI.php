@@ -4,7 +4,7 @@
 namespace App\Service\ExternalAPI;
 
 use App\Exception\FooTrip\InvalidParameterException;
-use App\Exception\MovieDB\FooTripResponseException;
+use App\Exception\FooTrip\FooTripResponseException;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class FooTripAPI implements FooTripAPIInterface

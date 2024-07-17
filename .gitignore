@@ -34,3 +34,7 @@ yarn-error.log
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+###> generated CSVs ###
+/public/build/csv
+###< generated CSVs ###
